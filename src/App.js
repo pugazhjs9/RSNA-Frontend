@@ -214,7 +214,6 @@ aws s3 sync --no-sign-request s3://openneuro.org/ds005096 Royal_Brisbane_TOFMRA`
 ├── train.csv
 ├── train_localizers.csv
 ├── train_kfold.csv                 # custom k-folds
-├── kaggle_evaluation
 └── external
     ├── Lausanne_TOFMRA
     │   ├── derivatives
@@ -667,10 +666,8 @@ python eval.py  --cfg configs/mit_b4_fpn_384.yaml`}
               <thead>
                 <tr>
                   <th>Notebook</th>
-                  <th>Local CV</th>
-                  <th>Public LB</th>
-                  <th>Private LB</th>
-                  <th>Rank</th>
+                  <th>Training AUC Score</th>
+                  <th>Testing AUC Score</th>
                 </tr>
               </thead>
               <tbody>
@@ -678,8 +675,6 @@ python eval.py  --cfg configs/mit_b4_fpn_384.yaml`}
                   <td>Final1</td>
                   <td>0.8823</td>
                   <td>0.89</td>
-                  <td>0.89</td>
-                  <td>-</td>
                 </tr>
               </tbody>
             </table>
